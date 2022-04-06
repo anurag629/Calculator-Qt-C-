@@ -21,6 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pushButton_9,SIGNAL(released()),this,SLOT(digit_pressed()));
 
     connect(ui->pushButton_plus_minus,SIGNAL(released()),this,SLOT(unary_operation_pressed()));
+    connect(ui->pushButton_percentage,SIGNAL(released()),this,SLOT(unary_operation_pressed()));
 }
 
 MainWindow::~MainWindow()
@@ -58,4 +59,12 @@ void MainWindow::unary_operation_pressed()
         newLabel = QString::number(labelNumber, 'g', 15);
         ui->text_area->setText(newLabel);
     }
+
+    if(button->text() == "%"){
+        labelNumber = ui->text_area->text().toDouble();
+        labelNumber = labelNumber * 0.01;
+        newLabel = QString::number(labelNumber, 'g', 15);
+        ui->text_area->setText(newLabel);
+    }
+
 }
