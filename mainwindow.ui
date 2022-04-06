@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>201</width>
-    <height>281</height>
+    <width>200</width>
+    <height>280</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,12 +20,12 @@
       <x>0</x>
       <y>0</y>
       <width>201</width>
-      <height>31</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>17</pointsize>
+      <pointsize>13</pointsize>
       <italic>false</italic>
       <bold>true</bold>
       <strikeout>false</strikeout>
@@ -334,13 +334,13 @@ border-color: rgb(46, 52, 54);</string>
      <string>=</string>
     </property>
    </widget>
-   <widget class="QLabel" name="text_area">
+   <widget class="QLabel" name="text_area_up">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>30</y>
-      <width>201</width>
-      <height>51</height>
+      <y>22</y>
+      <width>200</width>
+      <height>29</height>
      </rect>
     </property>
     <property name="font">
@@ -364,7 +364,7 @@ border-color: rgb(46, 52, 54);
      <string/>
     </property>
     <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_divide">
@@ -466,6 +466,39 @@ border-color: rgb(46, 52, 54);</string>
     </property>
     <property name="text">
      <string>C</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_area">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>51</y>
+      <width>200</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Serif</family>
+      <pointsize>17</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(211, 215, 207);
+border-color: rgb(46, 52, 54);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
     </property>
    </widget>
   </widget>
