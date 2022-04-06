@@ -38,3 +38,9 @@ void MainWindow::digit_pressed(){
 
     ui->text_area->setText(newLabel);
 }
+
+void MainWindow::on_pushButton_decimal_released()
+{
+    ui->text_area->setText(ui->text_area->text() + ".");
+}
+
