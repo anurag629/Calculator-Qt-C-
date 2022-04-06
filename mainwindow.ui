@@ -361,7 +361,7 @@ border-color: rgb(46, 52, 54);
 </string>
     </property>
     <property name="text">
-     <string>44</string>
+     <string/>
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

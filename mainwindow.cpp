@@ -8,6 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
     connect(ui->pushButton_0,SIGNAL(released()),this,SLOT(digit_pressed()));
     connect(ui->pushButton_1,SIGNAL(released()),this,SLOT(digit_pressed()));
     connect(ui->pushButton_2,SIGNAL(released()),this,SLOT(digit_pressed()));
@@ -28,5 +29,12 @@ MainWindow::~MainWindow()
 void MainWindow::digit_pressed(){
     QPushButton * button = (QPushButton*)sender();
 
-    ui->text_area->setText(button->text());
+    double labelNumber;
+    QString newLabel;
+
+    labelNumber = (ui->text_area->text() + button->text()).toDouble();
+
+    newLabel = QString::number(labelNumber,'g',15);
+
+    ui->text_area->setText(newLabel);
 }
