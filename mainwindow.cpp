@@ -56,14 +56,21 @@ void MainWindow::digit_pressed()
     {
         labelNumber = button->text().toDouble();
         userIsTypingSecondNumber = true;
+         newLabel = QString::number(labelNumber, 'g', 15);
     }
     else
     {
-        labelNumber = (ui->text_area->text() + button->text()).toDouble();
+        if (ui->text_area->text().contains('.') && button->text() == "0")
+        {
+            newLabel = (ui->text_area->text() + button->text());
+        }
+        else
+        {
+            labelNumber = (ui->text_area->text() + button->text()).toDouble();
+            newLabel = QString::number(labelNumber, 'g', 15);
+        }
+
     }
-
-
-    newLabel = QString::number(labelNumber, 'g', 15);
 
     ui->text_area->setText(newLabel);
 }
