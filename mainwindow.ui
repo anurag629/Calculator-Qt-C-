@@ -45,26 +45,6 @@ border-color: rgb(46, 52, 54);</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_Cancel">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>80</y>
-      <width>51</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(136, 138, 133);
-border-color: rgb(46, 52, 54);</string>
-    </property>
-    <property name="text">
-     <string>C</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton_8">
     <property name="geometry">
      <rect>
@@ -365,9 +345,10 @@ border-color: rgb(46, 52, 54);</string>
     </property>
     <property name="font">
      <font>
+      <family>Serif</family>
       <pointsize>17</pointsize>
       <italic>false</italic>
-      <bold>true</bold>
+      <bold>false</bold>
       <strikeout>false</strikeout>
      </font>
     </property>
@@ -380,10 +361,10 @@ border-color: rgb(46, 52, 54);
 </string>
     </property>
     <property name="text">
-     <string/>
+     <string>44</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_divide">
@@ -465,6 +446,26 @@ border-color: rgb(46, 52, 54);
     </property>
     <property name="text">
      <string>9</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Cancel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(136, 138, 133);
+border-color: rgb(46, 52, 54);</string>
+    </property>
+    <property name="text">
+     <string>C</string>
     </property>
    </widget>
   </widget>
