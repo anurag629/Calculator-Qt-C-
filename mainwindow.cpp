@@ -44,6 +44,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::digit_pressed()
 {
+    // button which we press in the application
     QPushButton *button = (QPushButton *)sender();
 
     double labelNumber;
@@ -102,7 +103,7 @@ void MainWindow::unary_operation_pressed()
         ui->text_area->setText(newLabel);
     }
 }
-
+// the cancel button for undoing the input 
 void MainWindow::on_pushButton_Cancel_released()
 {
     ui->pushButton_plus->setChecked(false);
@@ -115,7 +116,7 @@ void MainWindow::on_pushButton_Cancel_released()
     ui->text_area->setText("0");
     ui->text_area_up->setText("");
 }
-
+// button for giving the valuable output of the operations performed
 void MainWindow::on_pushButton_equal_released()
 {
     double labelNumber, secondNum;
@@ -154,7 +155,7 @@ void MainWindow::on_pushButton_equal_released()
 
     userIsTypingSecondNumber = false;
 }
-
+// specific for binary operations
 void MainWindow::binary_operation_pressed()
 {
     QPushButton *button = (QPushButton *)sender();

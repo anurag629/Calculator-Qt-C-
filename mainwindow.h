@@ -17,7 +17,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
-
+// on calling the signal the respective slots assigned, do the task
 private slots:
     void digit_pressed();
 
